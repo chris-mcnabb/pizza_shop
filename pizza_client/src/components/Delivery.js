@@ -4,6 +4,7 @@ import React from "react";
 const Delivery = (props) => {
 
     const handleText = (e) =>{
+        e.preventDefault()
         props.setDelivery({...props.delivery, [e.target.name]: e.target.value})
     }
 
